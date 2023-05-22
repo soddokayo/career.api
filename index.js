@@ -11,6 +11,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // 테이블 별로 별도 라우터가 api 처리
 app.use("/api/education", require("./app/education/route.js"));
+app.use("/api/memo", require("./app/memo/route.js"));
+app.use("/api/file", require("./app/file/route.js"));
 
 app.get("/", (req, res)=>{
     res.json({message: "Server is running on port "+PORT});

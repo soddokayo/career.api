@@ -1,4 +1,4 @@
-const sql = require("../db.js");
+//const sql = require("../db.js");
 
 // MYSQL 테이블 생성 정보 :
 // mysql> create table education (
